@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
 const mongodbPassword = process.env.MONGO_DB_PASSWORD;
-console.log(mongodbPassword);
 const uri = `mongodb+srv://admin:${mongodbPassword}@cluster0.vdprs.mongodb.net/Cluster0?retryWrites=true&w=majority`;
 
 //   Parsing request body
